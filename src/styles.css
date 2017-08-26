@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  padding: 0;
+  overflow: hidden;
+}
+
+*{
+  user-select: none;
+  -webkit-user-select:none;
+}
+ul{
+  list-style: none;
+  padding: 0;margin: 0;
+}
+ul li{
+  padding: 0;margin: 0;
+}
+a{
+  text-decoration: none;
+}
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+a:visited{
+  color: #333;
+}
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import '../node_modules/freeng/resources/freeng.min.css';
+@import '../node_modules/freeng/resources/themes/blue.css';

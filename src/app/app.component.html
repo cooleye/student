@@ -1,0 +1,26 @@
+<div class="container">
+   <nav>
+     <a   fRipple  (click)="click()">
+       <i  class="fa fa-bars fa-lag"></i>
+     </a>
+    <span style="margin-left:20px;font-size:24px;">学员管理系统</span>
+    <span class="search"> <input type="search" placeholder="搜索" name="" value=""></span>
+   </nav>
+
+   <div class="ng-view ease {{ show ? 'showClass' : 'hideClass'}}">
+     <div class="side-nav">
+       <ul>
+         <li  routerLink="student-worked" routerLinkActive="active">
+             <i class="fa fa-address-card"></i> <a>就业学员</a>
+         </li>
+         <li routerLink="interview-review" routerLinkActive="active">
+             <i class="fa fa-calendar-check-o"></i> <a>面试复盘</a>
+         </li>
+       </ul>
+     </div>
+     <div class="side-content">
+       <router-outlet></router-outlet>
+     </div>
+
+   </div>
+</div>
